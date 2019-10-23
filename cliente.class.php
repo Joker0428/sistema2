@@ -8,7 +8,10 @@ class Cliente{
     private $email;
     private $cpf;
 
-    public function getId(){
+    public function __construct(){
+
+    }
+	public function getId(){
 		return $this->id;
 	}
 
@@ -28,10 +31,25 @@ class Cliente{
 		return $this->telefone;
 	}
 
-    public __construct(){
+	public function setTelefone($telefone){
+		$this->telefone = $telefone;
+	}
 
-    }
+	public function getEmail(){
+		return $this->email;
+	}
 
+	public function setEmail($email){
+		$this->email = $email;
+	}
+
+	public function getCpf(){
+		return $this->cpf;
+	}
+
+	public function setCpf($cpf){
+		$this->cpf = $cpf;
+	}
 }
 
 
